@@ -2,11 +2,13 @@ import initSmoothScroll from "./modules/smooth-scroll.js";
 import initScrollAnimation from "./modules/scroll-animation.js";
 import initAccordion from "./modules/accordion.js";
 import initTabNav from "./modules/tabnav.js";
+import initModal from "./modules/modal.js";
 
 initTabNav();
 initAccordion();
 initSmoothScroll();
 initScrollAnimation();
+initModal();
 
 // Adicione um atributo data-anime="show-down" e
 // data-anime="show-right" a todos as section's
