@@ -4,6 +4,7 @@ import initAccordion from "./modules/accordion.js";
 import initTabNav from "./modules/tabnav.js";
 import initModal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js";
+import initDropdownMenu from "./modules/dropdown-menu.js";
 
 initTabNav();
 initAccordion();
@@ -11,7 +12,7 @@ initSmoothScroll();
 initScrollAnimation();
 initModal();
 initTooltip();
-
+initDropdownMenu();
 // Adicione um atributo data-anime="show-down" e
 // data-anime="show-right" a todos as section's
 // com descricão dos animais.
