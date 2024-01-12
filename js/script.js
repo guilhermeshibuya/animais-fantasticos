@@ -5,6 +5,8 @@ import initTabNav from "./modules/tabnav.js";
 import initModal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
+import initMenuMobile from "./modules/menu-mobile.js";
+import initAnimaNumeros from "./modules/anima-numeros.js";
 
 initTabNav();
 initAccordion();
@@ -13,6 +15,8 @@ initScrollAnimation();
 initModal();
 initTooltip();
 initDropdownMenu();
+initMenuMobile();
+initAnimaNumeros();
 // Adicione um atributo data-anime="show-down" e
 // data-anime="show-right" a todos as section's
 // com descricão dos animais.
