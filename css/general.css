@@ -296,3 +296,25 @@ body {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
+[data-semana]::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #e54;
+  margin-left: 4px;
+  border: 2px solid #000;
+}
+
+[data-semana].aberto::after {
+  background-color: #3e5;
+}
+
+.btc-preco {
+  background-color: #3e5;
+  padding: 0.2rem;
+  font-weight: bold;
+  border-radius: 2px;
+}

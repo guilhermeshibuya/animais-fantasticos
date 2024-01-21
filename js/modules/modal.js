@@ -3,16 +3,16 @@ export default function initModal() {
   const btnClose = document.querySelector('[data-modal="close"]');
   const containerModal = document.querySelector('[data-modal="container"]');
 
+  function toggleModal(event) {
+    event.preventDefault();
+    containerModal.classList.toggle("ativo");
+  }
+
+  function outsideClickModal(event) {
+    if (event.target === this) toggleModal(event);
+  }
+
   if (btnOpen && btnClose && containerModal) {
-    function toggleModal(event) {
-      event.preventDefault();
-      containerModal.classList.toggle("ativo");
-    }
-
-    function outsideClickModal(event) {
-      if (event.target === this) toggleModal(event);
-    }
-
     btnOpen.addEventListener("click", toggleModal);
     btnClose.addEventListener("click", toggleModal);
     containerModal.addEventListener("click", outsideClickModal);
