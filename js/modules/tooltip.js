@@ -19,9 +19,9 @@ export default class initTooltip {
   onMouseMove({ pageX, pageY }) {
     this.tooltipBox.style.top = `${pageY + 20}px`;
     if (pageX + 240 > window.innerWidth) {
-      this.tooltipBox.style.left = `${pageX - 190} px`;
+      this.tooltipBox.style.left = `${pageX - 190}px`;
     } else {
-      this.tooltipBox.style.left = `${pageX + 20} px`;
+      this.tooltipBox.style.left = `${pageX + 20}px`;
     }
   }
 
