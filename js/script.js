@@ -3,7 +3,7 @@ import Accordion from "./modules/accordion.js";
 import Modal from "./modules/modal.js";
 import TabNav from "./modules/tabnav.js";
 import Tooltip from "./modules/tooltip.js";
-import initScrollAnimation from "./modules/scroll-animation.js";
+import ScrollAnimation from "./modules/scroll-animation.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
@@ -34,7 +34,8 @@ tooltip.init();
 
 fetchAnimais("../api/animais.json", ".numeros-grid");
 
-initScrollAnimation();
+const scrollAnimation = new ScrollAnimation('[data-anime="scroll"]');
+scrollAnimation.init();
 
 initDropdownMenu();
 initMenuMobile();
