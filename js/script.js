@@ -7,7 +7,7 @@ import initScrollAnimation from "./modules/scroll-animation.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
-import initFetchAnimais from "./modules/fetch-animais.js";
+import fetchAnimais from "./modules/fetch-animais.js";
 import initFetchBtc from "./modules/fetch-btc.js";
 
 const smoothScroll = new SmoothScroll("[data-anime='smooth'] a[href^='#']");
@@ -32,10 +32,12 @@ modal.init();
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
+fetchAnimais("../api/animais.json", ".numeros-grid");
+
 initScrollAnimation();
 
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
-initFetchAnimais();
+
 initFetchBtc();
