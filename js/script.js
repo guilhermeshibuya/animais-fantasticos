@@ -6,9 +6,9 @@ import Tooltip from "./modules/tooltip.js";
 import ScrollAnimation from "./modules/scroll-animation.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
 import MenuMobile from "./modules/menu-mobile.js";
-import initFuncionamento from "./modules/funcionamento.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBtc from "./modules/fetch-btc.js";
+import Funcionamento from "./modules/funcionamento.js";
 
 const smoothScroll = new SmoothScroll("[data-anime='smooth'] a[href^='#']");
 smoothScroll.init();
@@ -43,6 +43,7 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
-initFuncionamento();
+const funcionamento = new Funcionamento("[data-semana]", "aberto");
+funcionamento.init();
 
 fetchBtc("https://blockchain.info/ticker", ".btc-preco");
